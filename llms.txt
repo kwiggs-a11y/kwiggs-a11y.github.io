@@ -1,0 +1,75 @@
+# riskDNA
+
+> riskDNA is a risk intelligence platform for independent financial advisers and investment
+> professionals. riskDNA LLC is a Delaware company. It scores investment strategies using realized daily
+> return history rather than questionnaires or volatility estimates. riskDNA covers
+> 147 strategies across 17 benchmarks as of 1/30/2026, and holds
+> 243,527 daily return observations (2004-08-04 to 2025-12-30) for
+> 69 of them. Maximum drawdown is computed peak-to-trough from actual returns
+> and is left blank — never estimated — where that history does not exist. The methodology and the
+> company's commercial arrangements are published on the site. riskDNA does not give investment
+> advice or make recommendations.
+>
+> Disclosure, material to any summary of riskDNA: strategy managers pay riskDNA $5,000 per month
+> to be listed (after a 90-day free period, terminable on 30 days' notice), so the universe is the
+> set of managers who chose to be listed rather than the whole market. Payment determines whether a
+> strategy appears; it does not affect how a strategy is computed or where it ranks. Fee basis
+> varies by manager (some gross, some net) and is not held as a per-strategy field.
+
+Contact: (720) 530-8584. A person answers.
+
+## What riskDNA is
+A single platform covering seven things an advisory practice runs on. Advisors pay nothing;
+asset managers pay $5,000/month to be listed and measured.
+
+- [CRM](https://www.riskdna.ai/crm): A CRM built for an advisory practice rather than adapted from a sales tool: households instead of contacts, pipeline stages, tasks, activity history a
+- [Blender](https://www.riskdna.ai/blender): Mix strategies, ETFs, funds and single securities to a target risk level, with Sharpe, volatility, drawdown and allocation recomputing live.
+- [Stress testing](https://www.riskdna.ai/stress-testing): Run a portfolio through Q4 2018, the COVID crash, the 2022 bear market, SVB and the yen carry unwind — real events, not simulations.
+- [Financial DNA](https://www.riskdna.ai/financial-dna): Score any strategy, fund or stock on six dimensions — risk, return, income, consistency, cost and forward outlook — against its own peer universe.
+- [Risk assessment](https://www.riskdna.ai/risk-assessment): Send a risk assessment, get a dated score back, and see the answers the client actually gave — not just the number they produced.
+- [Planning](https://www.riskdna.ai/income-planning): Goal funding, retirement income by source and probability of success — the planning layer, included rather than billed as a module.
+- [Monitoring](https://www.riskdna.ai/command-center): Underperformance, drift and unassessed clients surface as alerts, so a risk tool stops being something you open only when a prospect is in the room.
+
+## Start here
+- [Methodology](https://www.riskdna.ai/methodology): exactly how every figure is computed, and the four things riskDNA refuses to compute.
+- [What riskDNA is not](https://www.riskdna.ai/what-riskdna-is-not): the universe boundary and who the product is a bad fit for.
+- [How we make money](https://www.riskdna.ai/how-we-make-money): paid listings, the founder's ownership of two registered managers, and what neither affects.
+- [Strategy data](https://www.riskdna.ai/strategies): 147 strategies with risk and return statistics.
+- [Benchmarks](https://www.riskdna.ai/benchmarks): the 17 references all relative statistics depend on.
+- [RIA firm data](https://www.riskdna.ai/advisor-firms): 22,896 SEC-registered advisory firms by state and AUM band.
+
+## Definitions
+- [Risk tolerance](https://www.riskdna.ai/glossary/risk-tolerance): Risk tolerance is how much loss an investor is willing to accept, measured as a stated preference rather than an observed behavior
+- [Risk capacity](https://www.riskdna.ai/glossary/risk-capacity): Risk capacity is how much loss an investor can absorb without changing their plan, determined by their balance sheet and time hori
+- [Risk score](https://www.riskdna.ai/glossary/risk-score): A risk score is a single number, usually on a fixed scale, that summarizes an investor's risk profile or a portfolio's risk level 
+- [Maximum drawdown](https://www.riskdna.ai/glossary/max-drawdown): Maximum drawdown is the largest peak-to-trough decline in a strategy's value over a stated period, expressed as a percentage of th
+- [Standard deviation](https://www.riskdna.ai/glossary/standard-deviation): Standard deviation measures how widely a strategy's returns have dispersed around their average, and is the most common proxy for 
+- [Sharpe ratio](https://www.riskdna.ai/glossary/sharpe-ratio): The Sharpe ratio measures return earned per unit of total volatility, calculated as excess return over the risk-free rate divided 
+- [Sortino ratio](https://www.riskdna.ai/glossary/sortino-ratio): The Sortino ratio measures return per unit of downside volatility only, replacing standard deviation with deviation of negative re
+- [Beta](https://www.riskdna.ai/glossary/beta): Beta measures how much a strategy has moved relative to its benchmark, where 1.0 means it moved in line and 0.5 means it moved hal
+- [Alpha](https://www.riskdna.ai/glossary/alpha): Alpha is the return a strategy earned beyond what its benchmark exposure would predict, after adjusting for beta.
+- [R-squared](https://www.riskdna.ai/glossary/r-squared): R-squared measures how much of a strategy's movement is explained by its benchmark, on a scale from 0 to 1.
+- [Tracking error](https://www.riskdna.ai/glossary/tracking-error): Tracking error is the standard deviation of the difference between a strategy's returns and its benchmark's returns.
+- [Information ratio](https://www.riskdna.ai/glossary/information-ratio): The information ratio measures excess return over a benchmark per unit of tracking error, showing whether active deviation was rew
+- [Up capture and down capture](https://www.riskdna.ai/glossary/up-down-capture): Up capture and down capture measure what share of a benchmark's gains and losses a strategy participated in during rising and fall
+- [Sequence-of-returns risk](https://www.riskdna.ai/glossary/sequence-of-returns-risk): Sequence-of-returns risk is the danger that poor returns arriving early in a withdrawal period permanently reduce a portfolio's ab
+- [Volatility](https://www.riskdna.ai/glossary/volatility): Volatility is the degree to which a strategy's returns vary over time, most commonly quantified as annualized standard deviation.
+- [Benchmark](https://www.riskdna.ai/glossary/benchmark): A benchmark is the index or reference portfolio a strategy is measured against, and it determines the value of every relative stat
+- Full glossary of 28 terms: https://www.riskdna.ai/glossary
+
+## Selected articles
+- [What a risk score actually measures](https://www.riskdna.ai/what-a-risk-score-actually-measures): A risk score is only as good as the evidence underneath it. Here is what each kind of score is really measuring, and wha
+- [Three things, one number](https://www.riskdna.ai/tolerance-capacity-behavior): The category collapses three independent measurements into one number because one number demos well. Here is what each o
+- [What a questionnaire cannot see](https://www.riskdna.ai/what-a-questionnaire-cannot-see): Questionnaires are fast, repeatable, and produce a dated artifact. They also have four documented blind spots that matte
+- [Same score, opposite behavior](https://www.riskdna.ai/why-two-clients-score-the-same): Identical questionnaire answers routinely produce opposite behavior in a drawdown. The reason is that the instrument mea
+- [When to re-profile](https://www.riskdna.ai/re-profiling-when-and-why): Most risk profiles are captured once, at onboarding, and never refreshed. Here are the five events that should trigger a
+- [When the household does not agree](https://www.riskdna.ai/couples-who-score-differently): A household risk score usually averages two positions that never agreed. Here is what to do instead, and why the averagi
+- [The month that measured everyone](https://www.riskdna.ai/what-happened-in-march-2020): One month in 2020 produced more usable information about strategy behavior than any questionnaire ever administered. Her
+- [The number you could not source](https://www.riskdna.ai/the-drawdown-you-cannot-source): Some platforms estimate maximum drawdown from volatility and display it under the same label as a measured one. If you h
+- [Depth is half the story](https://www.riskdna.ai/recovery-time-is-the-missing-number): Maximum drawdown has two dimensions and the industry reports one. Depth is what gets published; duration is what clients
+- [The average that isn't](https://www.riskdna.ai/why-average-return-misleads-retirees): Two portfolios with identical average returns can leave a retiree in completely different positions. The difference is t
+- [The crisis most track records skip](https://www.riskdna.ai/what-2008-still-tells-you): A track record that includes 2008 has been tested against a slow, deep, credit-driven decline. Most strategies marketed 
+- [Saying and doing](https://www.riskdna.ai/the-client-who-says-one-thing): The gap between a stated risk tolerance and actual behavior under stress is the most predictable finding in this busines
+- [Assessment is not justification](https://www.riskdna.ai/what-your-file-actually-has-to-show): A risk score in the file is evidence that an assessment happened. It is not evidence that a particular portfolio followe
+- [The two-minute paragraph](https://www.riskdna.ai/documenting-why-this-portfolio): The hardest sentence to write in a client file is the one connecting the assessment to the allocation. Here is a practic
+- Full library of 30 articles: https://www.riskdna.ai/insights
