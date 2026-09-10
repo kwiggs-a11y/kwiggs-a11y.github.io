@@ -1,0 +1,494 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="description" content="Thor Low Volatility Index (THLV): 9.28% 5-year return as supplied, Sharpe 0.67. Measured drawdown -38.3%. For financial professionals; as of January 30, 2026."><title>Thor Low Volatility Index (THLV) — risk statistics — riskDNA</title><link rel="canonical" href="https://www.riskdna.ai/strategies/thor-low-volatility-index-thlv"><meta property="og:title" content="Thor Low Volatility Index (THLV) — risk statistics — riskDNA"><meta property="og:description" content="Thor Low Volatility Index (THLV): 9.28% 5-year return as supplied, Sharpe 0.67. Measured drawdown -38.3%. For financial professionals; as of January 30, 2026."><meta property="og:type" content="article"><meta property="og:url" content="https://www.riskdna.ai/strategies/thor-low-volatility-index-thlv"><meta property="og:site_name" content="riskDNA"><meta name="twitter:card" content="summary_large_image"><meta property="og:image" content="https://www.riskdna.ai/assets/og-default.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:image" content="https://www.riskdna.ai/assets/og-default.png"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt"><meta name="google-site-verification" content="wzai4Kw_npc3JRbL0NILz2LadScbuRmQYYzlZ4vLei0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" media="print" onload="this.media=&quot;all&quot;" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap"></noscript><style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+/* Palette lifted from the riskDNA product UI: deep navy ground, mint-teal signal,
+   amber for scores, coral for negatives. The site should look like the app. */
+--bg:#0A1628;--bg-2:#0D1F36;--panel:#112742;--panel-2:#15304F;--sunk:#071120;
+--line:#1E3E5A;--line-2:#264A69;
+--tx:#E6EEF6;--tx-2:#C2D4E4;--body:#A8BFD4;--muted:#7E9AB4;--faint:#7C93AB;
+--mint:#00D4AA;--mint-hi:#4ECDC4;--mint-dk:#00B894;--mint-wash:rgba(0,212,170,.10);
+--amber:#C9A96E;--amber-wash:rgba(201,169,110,.12);
+--coral:#F87171;--coral-wash:rgba(248,113,113,.11);
+--violet:#A78BFA;--blue:#60A5FA;
+--maxw:1240px;--read:37rem;
+--r:10px;--sh:0 1px 2px rgba(0,0,0,.35),0 14px 40px -22px rgba(0,0,0,.8);
+--display:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif;
+--serif:"Source Serif 4",Georgia,serif;
+--mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--body);
+font-family:var(--display);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased;
+font-variant-numeric:tabular-nums}
+a{color:var(--mint);text-decoration:none;text-underline-offset:2px}
+html{scroll-padding-top:76px}
+h2,h3,[id]{scroll-margin-top:76px}
+.home p a,.home li a,.faq p a,article p a,article li a,.tldr a,.note a,.close a{text-decoration:underline;text-decoration-color:rgba(0,212,170,.6);text-underline-offset:3px}
+.tbl td:not(:first-child){position:relative}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.per{font-family:var(--mono);font-size:10px;color:var(--amber);margin-left:5px;vertical-align:middle;font-weight:700}
+a:hover{text-decoration:underline;color:var(--mint-hi)}
+a:focus-visible{outline:2px solid var(--mint);outline-offset:3px;border-radius:3px}
+h1,h2,h3,h4{font-family:var(--display);color:var(--tx);font-weight:700;line-height:1.1;
+margin:0 0 .45em;letter-spacing:-.03em;text-wrap:balance}
+h1{font-size:clamp(2.3rem,5.2vw,3.8rem);font-weight:800;letter-spacing:-.042em}
+h2{font-size:clamp(1.4rem,2.6vw,1.95rem);margin-top:2.3em}
+h3{font-size:1.08rem;margin-top:1.9em;letter-spacing:-.02em}
+p{margin:0 0 1.1em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 30px}
+.kicker{font-family:var(--mono);text-transform:uppercase;font-size:10.5px;
+letter-spacing:.2em;color:var(--mint);margin:0 0 15px;font-weight:700}
+/* ---------- header ---------- */
+.hdr{background:var(--sunk);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:26px;min-height:60px;flex-wrap:wrap}
+.brandlink{font-weight:800;font-size:1.18rem;color:var(--tx);letter-spacing:-.04em;flex:0 0 auto}
+.brandlink:hover{text-decoration:none;color:var(--mint-hi)}
+.brandlink .d{color:var(--mint)}
+.nav{display:flex;gap:20px;flex-wrap:wrap;margin-left:auto;align-items:center}
+.nav a{color:var(--body);font-size:.85rem;font-weight:500}
+.nav a:hover{color:var(--tx);text-decoration:none}
+.nav a.cta{background:var(--mint);color:#04121F;padding:7px 16px;border-radius:6px;font-weight:700}
+.nav a.cta:hover{background:var(--mint-hi);color:#04121F}
+.crumbs{font-family:var(--mono);font-size:11px;color:var(--faint);padding:22px 0 0;letter-spacing:.04em}
+.crumbs a{color:var(--faint)}
+.crumbs a:hover{color:var(--mint)}
+/* ---------- hero ---------- */
+.hero{background:linear-gradient(180deg,var(--sunk) 0%,var(--bg) 100%);
+padding:86px 0 74px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+background:radial-gradient(70% 100% at 78% 0%,rgba(0,212,170,.14),transparent 62%)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{color:#fff;max-width:17ch}
+.hero .lede{color:var(--tx-2);font-size:1.14rem;max-width:54ch;margin-bottom:1.7em}
+/* ---------- reading ---------- */
+main{padding:0 0 88px}
+article{padding-top:28px}
+.lede{font-size:1.2rem;font-weight:400;line-height:1.45;color:var(--tx-2);
+margin:0 0 1.9em;max-width:46ch;letter-spacing:-.016em}
+article p,article ul,article ol{max-width:var(--read);font-family:var(--serif);font-size:1.04rem;
+line-height:1.68}
+article .lede,article .card p,article .note,article .warn,article .stat span,
+article .dh-r span,article table{font-family:var(--display)}
+ul,ol{padding-left:1.15em}
+li{margin:.42em 0}
+.pull{font-family:var(--display);font-weight:600;font-size:1.38rem;line-height:1.3;
+color:var(--tx);letter-spacing:-.028em;margin:2.4em 0;padding:2px 0 2px 22px;
+border-left:3px solid var(--mint);max-width:38ch}
+.close{margin-top:2.8em;padding-top:22px;border-top:1px solid var(--line);
+max-width:var(--read);font-size:.95rem}
+/* ---------- data page header ---------- */
+.dhead{display:grid;grid-template-columns:1.1fr .9fr;gap:22px 54px;align-items:end;
+margin:8px 0 10px;padding-bottom:30px;border-bottom:1px solid var(--line)}
+.dhead .dh-l{min-width:0}
+.dhead h1{margin-bottom:.3em}
+.dhead .lede{margin-bottom:0;max-width:40ch;font-size:1.02rem}
+.dh-r{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);
+border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.dh-r div{background:var(--panel);padding:16px 17px 17px;display:flex;flex-direction:column;gap:4px}
+.dh-r b{font-family:var(--mono);font-size:1.5rem;color:var(--tx);font-weight:700;
+letter-spacing:-.05em;line-height:1}
+.dh-r b.pos{color:var(--mint)}
+.dh-r b.neg{color:var(--coral)}
+.dh-r b.na{font-size:.92rem;color:var(--faint);font-weight:400}
+.dh-r span{font-size:.72rem;color:var(--muted);line-height:1.25}
+@media(max-width:900px){.dhead{grid-template-columns:1fr;align-items:start}}
+.affline{font-size:.78rem;color:var(--faint);margin:-6px 0 18px;max-width:none}
+.affline a{color:var(--muted)}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.chip{font-family:var(--display);font-size:.84rem;font-weight:500;color:var(--body);
+background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:7px 15px;
+transition:border-color .15s,color .15s}
+.chip:hover{border-color:var(--mint);color:var(--mint);text-decoration:none}
+.chip-all{color:var(--mint);border-color:rgba(0,212,170,.35);font-weight:600}
+
+/* ---------- evidence blocks ---------- */
+.ev{margin:28px 0;padding:0;border:1px solid var(--line);border-radius:var(--r);
+background:var(--panel);overflow:hidden}
+.ev figcaption{padding:16px 20px 12px}
+.ev-h{display:block;font-family:var(--display);font-weight:700;color:var(--tx);
+font-size:1rem;letter-spacing:-.02em;margin-bottom:3px}
+.ev-s{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--muted)}
+.ev-f{border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);
+font-family:var(--display);padding:12px 20px 14px!important;line-height:1.5}
+.ev .scroll{border:0;border-radius:0;margin:0;background:transparent}
+.ev-stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:1px;
+background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ev-stat div{background:var(--panel);padding:12px 16px 14px}
+.ev-stat b{display:block;font-family:var(--mono);font-size:1.3rem;color:var(--tx);
+letter-spacing:-.04em;line-height:1}
+.ev-stat b.pos{color:var(--mint)} .ev-stat b.neg{color:var(--coral)}
+.ev-stat span{font-family:var(--display);font-size:.72rem;color:var(--muted)}
+.ev-hist{display:block;width:100%;height:auto;padding:16px 20px 0}
+.ev-hist rect.ev-neg{fill:var(--coral);opacity:.85}
+.ev-hist rect.ev-pos{fill:var(--mint);opacity:.85}
+.ev-zero{stroke:var(--line-2);stroke-width:1;stroke-dasharray:3 3}
+.ev-ax{font-family:var(--mono);font-size:9.5px;fill:var(--faint)}
+
+/* ---------- product page points ---------- */
+.pts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin:34px 0 8px}
+.pt{border-top:2px solid var(--mint);padding-top:14px}
+.pt h2{font-size:1.02rem;margin:0 0 6px;letter-spacing:-.02em}
+.pt p{font-size:.9rem;color:var(--muted);margin:0;max-width:none;font-family:var(--display);line-height:1.5}
+
+/* ---------- screen gallery ---------- */
+.shot{margin:0 0 62px}
+.shot-h{display:block;margin-bottom:14px;text-decoration:none}
+.shot-h:hover{text-decoration:none}
+.shot-k{font-family:var(--mono);font-size:10px;letter-spacing:.19em;text-transform:uppercase;
+color:var(--mint);font-weight:700;display:block;margin-bottom:6px}
+.shot-h h2{margin:0 0 6px;font-size:clamp(1.3rem,2.4vw,1.75rem);color:var(--tx)}
+.shot-h:hover h2{color:var(--mint)}
+.shot-go{font-family:var(--display);font-size:.85rem;color:var(--mint);font-weight:600}
+.shot .mk{margin-top:0}
+/* make every card obviously clickable */
+.card{position:relative;padding-bottom:38px}
+.card::after{content:"→";position:absolute;left:22px;bottom:16px;font-family:var(--mono);
+font-size:.9rem;color:var(--mint);transition:transform .15s}
+.card:hover::after{transform:translateX(4px)}
+
+/* ---------- scannable article summary ---------- */
+.tldr{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--mint);
+border-radius:var(--r);padding:20px 24px 22px;margin:0 0 2.4em;max-width:var(--read)}
+.tldr-h{font-family:var(--mono);font-size:10px;letter-spacing:.19em;text-transform:uppercase;
+color:var(--mint);font-weight:700;display:block;margin-bottom:12px}
+.tldr ol{margin:0;padding-left:0;list-style:none;counter-reset:t;
+display:flex;flex-direction:column;gap:9px}
+.tldr li{counter-increment:t;position:relative;padding-left:30px;font-family:var(--display);
+font-size:.95rem;line-height:1.4;color:var(--tx-2);margin:0}
+.tldr li::before{content:counter(t);position:absolute;left:0;top:1px;width:20px;height:20px;
+border-radius:5px;background:var(--mint-wash);color:var(--mint);font-family:var(--mono);
+font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center}
+/* give H2s more air so the page reads as sections, not one block */
+article h2{margin-top:2.9em;padding-top:.2em}
+article h2:first-of-type{margin-top:1.6em}
+article p{margin-bottom:1.25em}
+
+/* ---------- charts ---------- */
+.chart{margin:22px 0 8px;width:100%}
+.chart svg{width:100%;height:210px;display:block;overflow:visible}
+.chart-cap{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);
+font-size:10px;letter-spacing:.05em;color:var(--faint);padding:6px 2px 0}
+.cline{fill:none;stroke:var(--mint);stroke-width:1.9;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.uline{fill:none;stroke:var(--coral);stroke-width:1.5;vector-effect:non-scaling-stroke}
+.cg{stroke:var(--line);stroke-width:1;vector-effect:non-scaling-stroke}
+.czero{stroke:var(--line-2);stroke-width:1;vector-effect:non-scaling-stroke}
+.cdot{fill:var(--coral)}
+.gs0{stop-color:var(--mint);stop-opacity:.26}
+.gs1{stop-color:var(--mint);stop-opacity:.01}
+.us0{stop-color:var(--coral);stop-opacity:.04}
+.us1{stop-color:var(--coral);stop-opacity:.3}
+.cl{font-family:var(--mono);font-size:10px;fill:var(--faint);letter-spacing:.05em}
+.cl.ce{text-anchor:end}
+.spark{width:104px;height:26px;vertical-align:middle}
+.spark path{fill:none;stroke-width:1.6;vector-effect:non-scaling-stroke}
+.spark.up path{stroke:var(--mint)}
+.spark.dn path{stroke:var(--coral)}
+/* ---------- stats ---------- */
+.stat{display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+margin:30px 0;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.stat div{background:var(--panel);padding:18px 19px 20px;display:flex;flex-direction:column;gap:5px}
+.stat b{font-family:var(--mono);font-size:1.72rem;color:var(--tx);font-weight:700;
+letter-spacing:-.05em;line-height:1}
+.stat b.pos{color:var(--mint)}
+.stat b.neg{color:var(--coral)}
+.stat b.amb{color:var(--amber)}
+.stat span{font-size:.76rem;color:var(--muted);line-height:1.3}
+.hero .stat{border-color:var(--line-2)}
+.hero .stat div{background:rgba(255,255,255,.035)}
+/* ---------- tables ---------- */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);
+border-radius:var(--r);background:var(--panel);margin:24px 0}
+.tbl{width:100%;border-collapse:collapse;font-size:.855rem}
+.ev .tbl td:first-child,.ev .tbl th:first-child{min-width:0;position:static}
+.tbl th[data-sort]{cursor:pointer}.tbl th[data-sort]:hover{color:var(--mint)}
+.tbl th[data-sort]:focus-visible{outline:2px solid var(--mint);outline-offset:-2px}
+.tbl th[data-sort]::after{content:" ↕";opacity:.45}.tbl th[data-dir="asc"]::after{content:" ▲";opacity:1}.tbl th[data-dir="desc"]::after{content:" ▼";opacity:1}
+.cmp .tbl td{white-space:normal;min-width:180px}
+.home > p,.home > ul,.faq p,.faq h3{max-width:var(--read)}
+.chart{position:relative}.chart-x{display:flex;justify-content:space-between;font-family:var(--mono);font-size:9.5px;color:var(--faint);padding:4px 2px 0}
+.chart svg{margin-left:46px;width:calc(100% - 46px)}
+.chart-x{margin-left:46px}
+.chart-y{position:absolute;left:0;top:0;width:42px;text-align:right;height:calc(100% - 64px);display:flex;flex-direction:column;justify-content:space-between;font-family:var(--mono);font-size:9.5px;color:var(--faint);pointer-events:none}
+.brandlink .mark{vertical-align:-5px;margin-right:7px}
+article .shot-h h2{margin-top:0}
+.cav{list-style:none;margin:14px 0 20px;padding:0;font-size:.82rem;color:var(--muted);display:grid;gap:6px}
+.cav li{padding-left:14px;position:relative}.cav li::before{content:"·";position:absolute;left:2px;color:var(--mint)}
+.cav strong{color:var(--tx-2);font-weight:600}
+.filt{width:100%;max-width:420px;padding:11px 14px;border-radius:8px;border:1px solid var(--muted);background:var(--sunk);color:var(--tx);font:inherit;font-size:16px}
+.mk-sc-f{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.66rem;color:var(--muted);margin-top:6px}.mk-sc-f b{color:var(--tx);font-family:var(--mono)}
+.mk-sc-b em{font-family:var(--mono);font-style:normal;font-size:.7rem;color:var(--muted)}
+.mk .mk-sc-b{grid-template-columns:52px 1fr auto}
+.filt:focus{outline:2px solid var(--mint);outline-offset:2px}
+.tbl td:first-child,.tbl tbody th:first-child{position:sticky;left:0;background:var(--panel);z-index:1}
+.tbl thead th:first-child{position:sticky;left:0;background:var(--sunk);z-index:2}
+.tbl th,.tbl td{text-align:left;padding:11px 15px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl thead th{font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.13em;
+color:var(--muted);font-weight:700;background:var(--sunk);position:sticky;top:0}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl tbody tr:hover{background:var(--panel-2)}
+.tbl th.num{text-align:right}
+.tbl td.num{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums;
+font-size:.82rem;letter-spacing:-.025em;color:var(--tx-2)}
+.tbl td:first-child{white-space:normal;min-width:200px;color:var(--tx-2)}
+.tbl a{color:var(--mint)}
+.neg{color:var(--coral)}
+.na{color:var(--faint);font-style:normal;font-size:.9em}
+/* ---------- blocks ---------- */
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(262px,1fr));margin:28px 0}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:21px 22px;background:var(--panel);
+display:block;transition:border-color .15s,transform .15s,background .15s}
+.card:hover{border-color:var(--mint-dk);background:var(--panel-2);text-decoration:none;transform:translateY(-2px)}
+.card h2,.card h3{margin:7px 0 6px;font-size:1rem;color:var(--tx);letter-spacing:-.02em}
+.card{padding-bottom:40px}
+.card p{margin:0;font-size:.87rem;color:var(--muted);line-height:1.45}
+.card .n{font-family:var(--mono);font-size:9.5px;color:var(--mint);letter-spacing:.14em;
+text-transform:uppercase;font-weight:700}
+.note,.warn{border-radius:var(--r);padding:17px 21px;font-size:.87rem;margin:26px 0;
+line-height:1.55;max-width:var(--read)}
+.note{background:var(--panel);border:1px solid var(--line);color:var(--muted)}
+.warn{background:var(--amber-wash);border:1px solid rgba(245,166,35,.3);color:var(--tx-2)}
+.note strong,.warn strong{color:var(--tx)}
+.btn{display:inline-block;font-family:var(--display);background:var(--mint);color:#04121F;padding:13px 26px;border-radius:7px;
+font-weight:700;font-size:.92rem;margin:6px 10px 6px 0;letter-spacing:-.012em;
+transition:transform .15s,background .15s}
+.btn:hover{background:var(--mint-hi);text-decoration:none;color:#04121F;transform:translateY(-1px)}
+.btn.alt{background:transparent;color:var(--tx-2);border:1px solid var(--line-2)}
+.btn.alt:hover{border-color:var(--mint);background:var(--mint-wash);color:var(--mint)}
+.cta-band{background:var(--sunk);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+padding:56px 0;margin:64px 0 0}
+.cta-band h2{color:var(--tx);margin-top:0}
+.cta-band p{max-width:var(--read);color:var(--body)}
+.idx{columns:2;column-gap:38px;margin:24px 0;max-width:var(--read)}
+.idx a{display:block;padding:6px 0;font-size:.94rem;break-inside:avoid}
+
+/* ---------- product UI recreations (tools/mockups.py) ---------- */
+.mk-cap{font-family:var(--display);font-size:.74rem;color:var(--faint);margin:-18px 0 26px;line-height:1.4}
+.aff-dot{color:var(--amber);font-weight:700}
+.tldr li a{color:var(--tx-2)}
+.tldr li a:hover{color:var(--mint);text-decoration:none}
+.mk-side li.soon{color:var(--faint);font-style:italic}
+.rel{display:grid;grid-template-columns:1fr 1fr;gap:20px 36px;margin:30px 0}
+.rel h2{font-size:.95rem;margin:0 0 8px}
+.rel a{display:block;font-size:.88rem;padding:4px 0;font-family:var(--display)}
+@media(max-width:680px){.rel{grid-template-columns:1fr}}
+.mk,.mk *{font-family:var(--display)}
+.mk .mk-t,.mk b,.mk-kpis b,.mk-ring-v,.mk-donut-n,.mk-donut-l,.mk-lab,.mk-kpis span,.mk-sl-h b,.mk-sl-h em,.mk-legend b,.mk-bar-h b,.mk-sc-h em,.mk-sc-b span,.mk-dna-h b,.mk-dna-s span,.mk-dna-s b,.mk-rad-ax,.mk-rad-v,.mk-ring span,.mk-tags i,.mk-col-h em,.mk-al-t,.mk-al-p,.mk-q em,.mk-inc b,.mk-bar-top span,.mk-alloc b{font-family:var(--mono)}
+.mk ul,.mk li,.mk p{max-width:none;font-size:inherit;line-height:inherit}
+.mk{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--bg-2);
+box-shadow:var(--sh);margin:26px 0;font-family:var(--display);max-width:100%}
+.mk-bar-top{background:var(--sunk);border-bottom:1px solid var(--line);padding:9px 14px;
+display:flex;align-items:center;gap:7px}
+.mk-bar-top i{width:9px;height:9px;border-radius:50%;background:var(--line-2);flex:0 0 auto}
+.mk-bar-top span{font-family:var(--mono);font-size:10px;color:var(--faint);margin-left:10px;letter-spacing:.04em}
+.mk-body{display:grid;grid-template-columns:150px 1fr;min-height:0}
+.mk-side{background:var(--sunk);border-right:1px solid var(--line);padding:14px 0}
+.mk-brand{font-weight:800;font-size:.82rem;color:var(--tx);padding:0 14px 14px;letter-spacing:-.03em}
+.mk-brand b{color:var(--mint);font-weight:800}
+.mk-side ul{list-style:none;margin:0;padding:0}
+.mk-side li{font-size:.76rem;color:var(--muted);padding:6px 14px;border-left:2px solid transparent}
+.mk-side li.on{color:var(--mint);background:var(--mint-wash);border-left-color:var(--mint)}
+.mk-main{padding:18px 20px 22px;min-width:0;overflow:hidden}
+.mk-h .mk-t{font-size:1.02rem;margin:0 0 3px;color:var(--tx);letter-spacing:-.025em}
+.mk-h p{font-size:.76rem;color:var(--muted);margin:0 0 15px}
+.mk-lab{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+color:var(--muted);display:block;margin-bottom:10px}
+.mk-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:8px;margin-bottom:16px}
+.mk-kpis div{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:9px 11px}
+.mk-kpis span{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.11em;
+text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.mk-kpis b{font-family:var(--mono);font-size:1.02rem;letter-spacing:-.04em;color:var(--tx)}
+.mk-split{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start}
+.mk-donut{display:flex;gap:12px;align-items:center}
+.mk-donut svg{width:118px;height:118px;flex:0 0 auto}
+.mk-donut-n{font-family:var(--mono);font-size:19px;font-weight:700;fill:var(--tx);text-anchor:middle}
+.mk-donut-l{font-family:var(--mono);font-size:9px;fill:var(--muted);text-anchor:middle;letter-spacing:.1em}
+.mk-legend{list-style:none;margin:0;padding:0;font-size:.72rem;color:var(--body)}
+.mk-legend li{display:flex;align-items:center;gap:6px;padding:2.5px 0;white-space:nowrap}
+.mk-legend i{width:7px;height:7px;border-radius:2px;flex:0 0 auto}
+.mk-legend b{margin-left:auto;font-family:var(--mono);color:var(--tx-2);padding-left:12px}
+.mk-sliders{min-width:0}
+.mk-sl{margin-bottom:9px}
+.mk-sl-h{display:flex;align-items:center;gap:6px;font-size:.72rem;margin-bottom:4px}
+.mk-sl-h i{width:7px;height:7px;border-radius:50%;flex:0 0 auto}
+.mk-sl-h b{color:var(--tx);font-family:var(--mono);font-size:.7rem}
+.mk-sl-h span{color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mk-sl-h em{margin-left:auto;font-family:var(--mono);color:var(--tx-2);font-style:normal}
+.mk-sl-t{height:3px;background:var(--line);border-radius:2px;position:relative}
+.mk-sl-t i{position:absolute;top:-3px;width:9px;height:9px;border-radius:50%;transform:translateX(-50%)}
+.mk-alloc{margin-top:12px;background:var(--mint-wash);border:1px solid rgba(0,212,170,.3);
+border-radius:6px;padding:7px 11px;font-size:.72rem;color:var(--body);display:flex}
+.mk-alloc b{margin-left:auto;color:var(--mint);font-family:var(--mono)}
+.mk-bar{margin-bottom:9px}
+.mk-bar-h{display:flex;font-size:.72rem;color:var(--body);margin-bottom:4px}
+.mk-bar-h b{margin-left:auto;font-family:var(--mono);font-size:.7rem}
+.mk-bar-t{height:5px;background:var(--line);border-radius:3px;overflow:hidden}
+.mk-bar-t i{display:block;height:100%;border-radius:3px}
+.mk-bar-s{font-size:.66rem;color:var(--faint);margin-top:3px}
+.mk-tabs{display:flex;gap:4px;margin-bottom:14px;flex-wrap:wrap}
+.mk-tabs i{font-style:normal;font-size:.72rem;color:var(--muted);padding:4px 10px;border-radius:5px;
+background:var(--panel);border:1px solid transparent}
+.mk-tabs i.on{color:var(--mint);background:var(--mint-wash);border-color:rgba(0,212,170,.3)}
+.mk-scen{display:flex;flex-direction:column;gap:12px}
+.mk-sc{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:11px 13px}
+.mk-sc-h{display:flex;align-items:baseline;margin-bottom:8px}
+.mk-sc-h b{font-size:.78rem;color:var(--tx);display:block}
+.mk-sc-h span{font-size:.66rem;color:var(--faint)}
+.mk-sc-h em{margin-left:auto;font-family:var(--mono);font-style:normal;font-size:.92rem;letter-spacing:-.03em}
+.mk-sc-b{display:grid;grid-template-columns:52px 1fr;gap:8px;align-items:center;margin-bottom:4px}
+.mk-sc-b span{font-family:var(--mono);font-size:9.5px;color:var(--faint);letter-spacing:.09em}
+.mk-two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mk-dna{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:13px 14px}
+.mk-dna-h{display:flex;align-items:flex-start;margin-bottom:6px}
+.mk-dna-h b{font-family:var(--mono);font-size:.82rem;color:var(--tx);display:block;letter-spacing:-.02em}
+.mk-dna-h span{font-size:.66rem;color:var(--muted)}
+.mk-dna-s{margin-left:auto;text-align:right;background:var(--bg-2);border:1px solid var(--line);
+border-radius:6px;padding:4px 9px}
+.mk-dna-s span{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.11em;color:var(--muted)}
+.mk-dna-s b{font-family:var(--mono);font-size:1.05rem;letter-spacing:-.04em}
+.mk-radar{width:100%;height:auto;max-width:200px;display:block;margin:0 auto 10px;overflow:visible}
+.mk-rad-g{fill:none;stroke:var(--line-2);stroke-width:.8}
+.mk-rad-p{fill:rgba(0,212,170,.16);stroke:var(--mint);stroke-width:1.5}
+.mk-rad-d{fill:var(--mint)}
+.mk-rad-ax{font-family:var(--mono);font-size:9px;fill:var(--muted);letter-spacing:.06em}
+.mk-rad-v{font-family:var(--mono);font-size:9px;fill:var(--tx-2);font-weight:700}
+.mk-ring{display:flex;flex-direction:column;align-items:center;gap:5px;flex:0 0 auto}
+.mk-ring svg{width:88px;height:88px}
+.mk-ring-bg{fill:none;stroke:var(--line)}
+.mk-ring-v{font-family:var(--mono);font-size:25px;font-weight:700;text-anchor:middle;letter-spacing:-.04em}
+.mk-ring span{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.mk-strat-h{display:flex;gap:16px;align-items:center;margin-bottom:15px}
+.mk-strat-h b{display:block;font-size:.92rem;color:var(--tx);margin-bottom:3px;letter-spacing:-.025em}
+.mk-strat-h span{font-size:.72rem;color:var(--muted);line-height:1.45;display:block}
+.mk-tags{display:flex;gap:5px;margin-top:7px;flex-wrap:wrap}
+.mk-tags i{font-style:normal;font-family:var(--mono);font-size:9px;letter-spacing:.08em;
+text-transform:uppercase;color:var(--mint);background:var(--mint-wash);
+border:1px solid rgba(0,212,170,.28);border-radius:4px;padding:2px 6px}
+.mk-perf{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:13px 14px}
+@media(max-width:820px){
+ .mk-body{grid-template-columns:1fr}.mk-side{display:none}
+ .mk-split{grid-template-columns:1fr}.mk-two{grid-template-columns:1fr}
+}
+
+.mk-board{display:grid;grid-template-columns:repeat(6,1fr);gap:7px}
+.mk-col{background:var(--panel);border:1px solid var(--line);border-top:2px solid;
+border-radius:7px;padding:9px 8px;min-height:104px}
+.mk-col-h{display:flex;margin-bottom:7px}
+.mk-col-h span{font-size:.7rem;font-weight:600}
+.mk-col-h em{margin-left:auto;font-family:var(--mono);font-size:.66rem;color:var(--muted);font-style:normal}
+.mk-cd{background:var(--bg-2);border:1px solid var(--line);border-radius:5px;padding:7px 8px;margin-bottom:5px}
+.mk-cd b{display:block;font-size:.7rem;color:var(--tx);margin-bottom:2px}
+.mk-cd span{display:block;font-size:.64rem;color:var(--muted)}
+.mk-empty{font-size:.64rem;color:var(--faint);text-align:center;padding:14px 0}
+.mk-pills{display:flex;gap:5px;margin-bottom:13px}
+.mk-pills i{font-style:normal;font-size:.72rem;color:var(--muted);padding:5px 12px;border-radius:6px;
+background:var(--panel);border:1px solid var(--line)}
+.mk-pills i.on{color:var(--mint);background:var(--mint-wash);border-color:rgba(0,212,170,.3)}
+.mk-alert{background:var(--panel);border:1px solid var(--line);border-left:3px solid;
+border-radius:7px;padding:10px 12px}
+.mk-al-t{font-family:var(--mono);font-size:9px;letter-spacing:.13em;margin-bottom:4px;font-weight:700}
+.mk-alert b{display:block;font-size:.76rem;color:var(--tx);margin-bottom:3px}
+.mk-alert span{display:block;font-size:.66rem;color:var(--muted);line-height:1.4}
+.mk-al-p{display:inline-block;margin-top:6px;font-family:var(--mono);font-size:9px;
+border:1px solid;border-radius:4px;padding:2px 6px}
+.mk-as-h{display:flex;gap:15px;align-items:center;margin-bottom:13px}
+.mk-as-h b{display:block;font-size:.86rem;color:var(--tx);margin-bottom:3px}
+.mk-as-h span{font-size:.7rem;color:var(--muted);line-height:1.45}
+.mk-q{background:var(--panel);border:1px solid var(--line);border-radius:7px;
+padding:9px 12px;margin-bottom:6px}
+.mk-q b{display:block;font-size:.74rem;color:var(--tx);margin-bottom:2px}
+.mk-q span{display:block;font-size:.66rem;color:var(--faint);margin-bottom:4px}
+.mk-q em{font-style:normal;font-family:var(--mono);font-size:.7rem;color:var(--mint)}
+.mk-inc{display:flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line);
+border-radius:6px;padding:8px 11px;margin-bottom:5px;font-size:.72rem}
+.mk-inc i{width:7px;height:7px;border-radius:2px;flex:0 0 auto}
+.mk-inc b{margin-left:auto;font-family:var(--mono);color:var(--tx-2)}
+@media(max-width:820px){.mk-board{grid-template-columns:repeat(2,1fr)}}
+/* ---------- footer ---------- */
+.ftr{background:var(--sunk);color:var(--muted);padding:56px 0 42px;font-size:.85rem;
+border-top:1px solid var(--line)}
+.ftr .cols{display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(164px,1fr));margin-bottom:34px}
+.ftr .fh{color:var(--tx);font-size:9.5px;text-transform:uppercase;letter-spacing:.15em;
+font-family:var(--mono);margin:0 0 12px;font-weight:700}
+.ftr a{color:var(--body);display:block;padding:3px 0;font-size:.84rem}
+.ftr .legal a{display:inline;padding:0;text-decoration:underline;text-underline-offset:2px}
+.ftr a:hover{color:var(--mint);text-decoration:none}
+.ftr .legal{border-top:1px solid var(--line);padding-top:22px;font-size:.75rem;
+line-height:1.65;color:var(--faint);max-width:82ch}
+.ftr .brandlink{font-size:1.05rem;margin-bottom:12px;display:inline-block}
+@media(max-width:680px){
+ body{font-size:16px}.hero{padding:44px 0 40px}.idx{columns:1}
+ /* header: brand + CTA on one row, links as a single scrolling strip beneath.
+    Was three wrapped rows at 153px -- a fifth of the screen before content. */
+ .hdr{position:static}
+ .hdr .wrap{display:grid;grid-template-columns:1fr auto;align-items:center;
+   min-height:auto;padding:10px 18px 0;gap:0}
+ .brandlink{grid-column:1;justify-self:start;width:max-content;max-width:calc(100% - 110px)}
+ .nav{grid-column:1/-1;margin:8px -18px 0;padding:0 18px 10px;gap:16px;
+   flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+   scrollbar-width:none;font-size:.8rem}
+ .nav::-webkit-scrollbar{display:none}
+ .nav a{white-space:nowrap;flex:0 0 auto;padding:10px 0;line-height:1}
+ .nav a.cta{grid-column:2;grid-row:1;order:-1;position:absolute;right:18px;top:7px;
+   padding:11px 15px;font-size:.82rem;line-height:1}
+ .brandlink{line-height:38px}
+ .hdr .wrap{position:relative}
+ .wrap{padding:0 18px}
+ .pull{font-size:1.16rem}
+ h1{font-size:2.1rem}
+ /* product screens: keep desktop proportions and pan, rather than squash text to 7px */
+ .mk{overflow-x:auto;-webkit-overflow-scrolling:touch}
+ .mk-body{min-width:440px;grid-template-columns:1fr}
+ .mk-side{display:none}
+ .mk-main{overflow:visible}
+ html{scroll-padding-top:0}h2,h3,[id]{scroll-margin-top:14px}
+ .tbl td{white-space:normal;min-width:110px}.tbl td:first-child{min-width:150px}.tbl td:last-child{min-width:170px}
+ .nav::after{content:"";position:sticky;right:0;flex:0 0 26px;margin-left:-26px;align-self:stretch;background:linear-gradient(90deg,transparent,var(--sunk));pointer-events:none}
+ .mk-split{grid-template-columns:auto 1fr}
+ .mk-two{grid-template-columns:1fr}
+ .mk-board{grid-template-columns:repeat(3,1fr)}
+ .cmp .tbl td:first-child{position:static;min-width:96px}.cmp .tbl td{min-width:120px}
+ .scroll::after,.mk::after{content:"scroll →";position:sticky;left:0;float:left;font-family:var(--mono);
+   font-size:9px;letter-spacing:.1em;color:var(--faint);padding:6px 10px;pointer-events:none}
+ /* charts: fixed height so paths do not collapse; labels are HTML now */
+ .chart svg{height:150px}
+ /* footer: two columns and tappable links, instead of a 1,400px single stack */
+ .ftr .cols{grid-template-columns:1fr 1fr;gap:22px 18px}
+ .ftr a{padding:8px 0;font-size:.9rem}
+ .ftr .brandlink{padding:0}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Thor Low Volatility Index (THLV) \u2014 risk and return statistics","description":"Managed by a firm riskDNA's founder owns. Thor Low Volatility Index (THLV): 9.28% 5-year return as supplied, Sharpe 0.67. Measured drawdown -38.3%. For financial professionals; as of January 30, 2026.","url":"https://www.riskdna.ai/strategies/thor-low-volatility-index-thlv","publisher":{"@type":"Organization","name":"riskDNA","url":"https://www.riskdna.ai"},"sourceOrganization":{"@type":"Organization","name":"THOR Financial Technologies"},"temporalCoverage":"2005-02-24/2025-12-30","variableMeasured":["Return (annualized)","Std dev","Sharpe","Sortino","Alpha","Beta","R\u00b2","Tracking err","Info ratio","Up capture","Down capture"],"isAccessibleForFree":true}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"riskDNA","item":"https://www.riskdna.ai"},{"@type":"ListItem","position":2,"name":"Strategies","item":"https://www.riskdna.ai/strategies"},{"@type":"ListItem","position":3,"name":"Thor Low Volatility Index (THLV)","item":"https://www.riskdna.ai/strategies/thor-low-volatility-index-thlv"}]}</script></head><body><header class="hdr"><div class="wrap"><a class="brandlink" href="/"><svg class="mark" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><circle cx="16" cy="16" r="14.5" stroke="#C9A96E" stroke-width="1.5" fill="none"/><circle cx="16" cy="16" r="11" stroke="#C9A96E" stroke-width="0.5" fill="none" opacity="0.3"/><line x1="10" y1="10" x2="22" y2="22" stroke="#00D4AA" stroke-width="2.5" stroke-linecap="round"/><line x1="22" y1="10" x2="10" y2="22" stroke="#00D4AA" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="16" r="2.5" fill="#C9A96E"/></svg>risk<span class="d">DNA</span></a><nav class="nav"><a href="/platform">Platform</a><a href="/strategies">Strategies</a><a href="/insights">Insights</a><a href="/glossary">Glossary</a><a href="/compare">Compare</a><a href="/pricing">Pricing</a><a class="signin" href="https://www.riskdna.ai/login">Sign in</a><a class="cta" href="https://www.riskdna.ai/sign-up">Start free</a></nav></div></header><main><div class="wrap"><div class="crumbs"><a href="/">riskDNA</a> &rsaquo; <a href="/strategies">Strategies</a> &rsaquo; <span>Thor Low Volatility Index (THLV)</span></div><article>
+<div class="dhead"><div class="dh-l"><p class="kicker">Strategy data</p><h1>Thor Low Volatility Index (THLV)</h1>
+<p class="lede">For financial professionals. Benchmarked against iShares MSCI USA Min Vol Factor ETF (USMV), as of January 30, 2026.</p></div>
+<div class="dh-r"><div><b class="pos">9.3%</b><span>5-year return</span></div><div><b>0.67</b><span>5-year Sharpe</span></div><div><b>-38.3%</b><span>max drawdown, from daily series</span></div><div><b>20y</b><span>of supplied daily series</span></div></div></div>
+<p class="affline">Managed by an SEC-registered investment adviser riskDNA's founder owns; read this page as that firm's performance presentation. <a href="/how-we-make-money">How riskDNA is funded</a>.</p>
+<ul class="cav"><li><strong>Manager-supplied:</strong> return (annualized), std dev, Sharpe and Sortino, as of January 30, 2026.</li><li><strong>Fee basis:</strong> not yet confirmed for this strategy; confirm before a client document.</li><li><strong>Computed by riskDNA:</strong> max drawdown, growth of $100, full-series volatility and years of history, from 5,246 daily returns, 2005-02-24 to 2025-12-30.</li><li><strong>Two windows:</strong> where the since-inception row differs from those, the row is the manager's figure over the manager's own window and fee basis.</li><li><strong>Sharpe and Sortino</strong> are as supplied; the risk-free rate used is not stated to us, so compare across managers with care.</li></ul><div class="warn"><strong>May include model history.</strong> The daily series was supplied by the manager, and riskDNA holds no live-launch date for it. Any period before the strategy went live would be hypothetical (model) performance, not a live track record. The drawdown above is measured from what was supplied, not verified as live history.</div>
+<h2>Risk and return by period</h2><div class="scroll"><table class="tbl"><thead><tr><th scope="col">Metric</th><th scope="col" class="num">1 year</th><th scope="col" class="num">3 years</th><th scope="col" class="num">5 years</th><th scope="col" class="num">10 years</th><th scope="col" class="num">Since inception</th></tr></thead><tbody><tr><th scope="row">Return (annualized)</th><td class="num">17.79%</td><td class="num">8.50%</td><td class="num">9.28%</td><td class="num">12.66%</td><td class="num">11.71%</td></tr><tr><th scope="row">Std dev</th><td class="num">6.24%</td><td class="num">11.04%</td><td class="num">13.27%</td><td class="num">12.55%</td><td class="num">11.67%</td></tr><tr><th scope="row">Sharpe</th><td class="num">2.6400</td><td class="num">0.7410</td><td class="num">0.6712</td><td class="num">0.9546</td><td class="num">0.9536</td></tr><tr><th scope="row">Sortino</th><td class="num">14.4065</td><td class="num">1.2372</td><td class="num">1.1988</td><td class="num">1.5270</td><td class="num">1.4814</td></tr><tr><th scope="row">Alpha</th><td class="num">14.28%</td><td class="num neg">-0.54%</td><td class="num">0.95%</td><td class="num">4.60%</td><td class="num">2.80%</td></tr><tr><th scope="row">Beta</th><td class="num">0.4844</td><td class="num">0.8551</td><td class="num">0.9104</td><td class="num">0.7437</td><td class="num">0.7647</td></tr><tr><th scope="row">R²</th><td class="num">0.2477</td><td class="num">0.5690</td><td class="num">0.7235</td><td class="num">0.5275</td><td class="num">0.5378</td></tr><tr><th scope="row">Tracking err</th><td class="num">6.32%</td><td class="num">7.48%</td><td class="num">7.13%</td><td class="num">9.21%</td><td class="num">8.38%</td></tr><tr><th scope="row">Info ratio</th><td class="num">2.0443</td><td class="num neg">-0.3292</td><td class="num neg">-0.0042</td><td class="num">0.2111</td><td class="num neg">-0.0025</td></tr><tr><th scope="row">Up capture</th><td class="num">1.5458</td><td class="num">0.8976</td><td class="num">0.9468</td><td class="num">0.9274</td><td class="num">0.9027</td></tr><tr><th scope="row">Down capture</th><td class="num">0.0494</td><td class="num">1.0245</td><td class="num">0.9169</td><td class="num">0.7305</td><td class="num">0.8057</td></tr></tbody></table></div>
+<p style="font-size:.86rem;color:var(--muted)">Read beta and alpha next to R&sup2; — a low R&sup2; means the benchmark explains little of this strategy's movement, and the relative statistics describe a weak relationship. <a href="/why-benchmark-choice-changes-everything">Why benchmark choice changes every number</a>.</p>
+
+<h2>Maximum drawdown, from the supplied daily series</h2>
+<div class="stat">
+<div><b>-38.30%</b><span>maximum drawdown, from daily returns</span></div>
+<div><b>5,246</b><span>daily observations</span></div>
+<div><b>21y</b><span>of history, from 2005</span></div>
+<div><b>28</b><span>longest months below a prior high</span></div>
+</div>
+<div class="chart"><svg viewBox="0 0 760 210" role="img" aria-label="Growth of $100 over 21 years, ending at $589" preserveAspectRatio="none"><defs><linearGradient id="gg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="gs0"/><stop offset="1" class="gs1"/></linearGradient></defs><line x1="0" y1="52.5" x2="760" y2="52.5" class="cg"/><line x1="0" y1="105.0" x2="760" y2="105.0" class="cg"/><line x1="0" y1="157.5" x2="760" y2="157.5" class="cg"/><path d="M0.00,179.14 L3.03,178.84 L6.06,179.60 L9.08,180.09 L12.11,179.30 L15.14,179.61 L18.17,176.76 L21.20,177.43 L24.22,175.76 L27.25,180.22 L30.28,176.43 L33.31,176.08 L36.33,174.00 L39.36,174.48 L42.39,172.29 L45.42,171.89 L48.45,175.11 L51.47,175.54 L54.50,175.55 L57.53,174.14 L60.56,172.34 L63.59,169.13 L66.61,167.46 L69.64,166.82 L72.67,164.85 L75.70,165.79 L78.73,165.32 L81.75,161.93 L84.78,159.22 L87.81,160.54 L90.84,162.84 L93.86,161.55 L96.89,158.11 L99.92,156.05 L102.95,157.52 L105.98,156.71 L109.00,160.59 L112.03,161.10 L115.06,160.11 L118.09,159.50 L121.12,159.63 L124.14,165.25 L127.17,169.37 L130.20,169.58 L133.23,172.41 L136.25,184.94 L139.28,177.81 L142.31,175.39 L145.34,184.31 L148.37,195.52 L151.39,193.35 L154.42,181.79 L157.45,176.69 L160.48,177.16 L163.51,170.08 L166.53,166.00 L169.56,162.38 L172.59,164.73 L175.62,158.98 L178.65,156.58 L181.67,160.45 L184.70,158.06 L187.73,153.26 L190.76,151.78 L193.78,160.07 L196.81,160.34 L199.84,158.80 L202.87,158.89 L205.90,157.43 L208.92,155.11 L211.95,154.94 L214.98,149.69 L218.01,147.91 L221.04,144.72 L224.06,144.41 L227.09,141.43 L230.12,142.29 L233.15,144.22 L236.18,145.92 L239.20,155.08 L242.23,155.06 L245.26,153.98 L248.29,154.28 L251.31,153.42 L254.34,149.23 L257.37,146.65 L260.40,144.12 L263.43,144.18 L266.45,149.31 L269.48,145.66 L272.51,144.67 L275.54,144.26 L278.57,142.29 L281.59,143.31 L284.62,142.95 L287.65,141.52 L290.68,136.23 L293.71,135.09 L296.73,131.66 L299.76,129.40 L302.79,128.93 L305.82,130.45 L308.84,125.63 L311.87,128.08 L314.90,124.94 L317.93,120.77 L320.96,118.23 L323.98,115.78 L327.01,119.50 L330.04,114.52 L333.07,114.51 L336.10,113.55 L339.12,111.83 L342.15,109.60 L345.18,111.61 L348.21,108.47 L351.24,111.36 L354.26,111.51 L357.29,109.83 L360.32,109.72 L363.35,109.43 L366.37,107.53 L369.40,109.76 L372.43,109.56 L375.46,109.21 L378.49,111.30 L381.51,109.69 L384.54,116.73 L387.57,116.85 L390.60,116.83 L393.63,116.82 L396.65,118.86 L399.68,120.99 L402.71,121.37 L405.74,117.16 L408.76,117.30 L411.79,116.13 L414.82,114.67 L417.85,112.32 L420.88,113.01 L423.90,113.11 L426.93,115.37 L429.96,110.01 L432.99,108.76 L436.02,107.07 L439.04,104.95 L442.07,104.88 L445.10,103.96 L448.13,102.58 L451.16,101.62 L454.18,99.90 L457.21,99.18 L460.24,97.51 L463.27,95.00 L466.29,92.30 L469.32,91.98 L472.35,87.13 L475.38,92.10 L478.41,92.11 L481.43,92.06 L484.46,91.51 L487.49,91.42 L490.52,91.04 L493.55,89.55 L496.57,89.06 L499.60,92.11 L502.63,91.05 L505.66,95.05 L508.69,90.87 L511.71,87.91 L514.74,86.08 L517.77,83.61 L520.80,89.28 L523.82,83.86 L526.85,82.86 L529.88,83.23 L532.91,82.32 L535.94,81.58 L538.96,79.61 L541.99,76.98 L545.02,78.03 L548.05,86.16 L551.08,77.57 L554.10,66.78 L557.13,62.56 L560.16,61.39 L563.19,57.26 L566.22,53.77 L569.24,57.81 L572.27,59.45 L575.30,52.64 L578.33,50.60 L581.35,51.49 L584.38,48.28 L587.41,44.39 L590.44,39.18 L593.47,38.74 L596.49,39.38 L599.52,36.52 L602.55,34.34 L605.58,39.48 L608.61,34.67 L611.63,35.99 L614.66,30.81 L617.69,34.71 L620.72,35.32 L623.75,34.05 L626.77,38.49 L629.80,37.65 L632.83,43.99 L635.86,35.93 L638.88,38.74 L641.91,44.89 L644.94,37.46 L647.97,32.06 L651.00,36.49 L654.02,33.00 L657.05,35.62 L660.08,36.95 L663.11,37.28 L666.14,40.20 L669.16,34.12 L672.19,31.43 L675.22,33.98 L678.25,38.02 L681.27,39.28 L684.30,36.41 L687.33,31.36 L690.36,32.11 L693.39,28.27 L696.41,24.88 L699.44,28.43 L702.47,25.87 L705.50,26.70 L708.53,24.03 L711.55,21.16 L714.58,19.46 L717.61,21.94 L720.64,16.89 L723.67,24.21 L726.69,25.47 L729.72,25.02 L732.75,25.86 L735.78,26.08 L738.80,22.94 L741.83,20.55 L744.86,19.55 L747.89,17.51 L750.92,16.24 L753.94,16.00 L756.97,14.66 L760.00,14.48 L760.00,210.00 L0,210.00 Z" fill="url(#gg)"/><path d="M0.00,179.14 L3.03,178.84 L6.06,179.60 L9.08,180.09 L12.11,179.30 L15.14,179.61 L18.17,176.76 L21.20,177.43 L24.22,175.76 L27.25,180.22 L30.28,176.43 L33.31,176.08 L36.33,174.00 L39.36,174.48 L42.39,172.29 L45.42,171.89 L48.45,175.11 L51.47,175.54 L54.50,175.55 L57.53,174.14 L60.56,172.34 L63.59,169.13 L66.61,167.46 L69.64,166.82 L72.67,164.85 L75.70,165.79 L78.73,165.32 L81.75,161.93 L84.78,159.22 L87.81,160.54 L90.84,162.84 L93.86,161.55 L96.89,158.11 L99.92,156.05 L102.95,157.52 L105.98,156.71 L109.00,160.59 L112.03,161.10 L115.06,160.11 L118.09,159.50 L121.12,159.63 L124.14,165.25 L127.17,169.37 L130.20,169.58 L133.23,172.41 L136.25,184.94 L139.28,177.81 L142.31,175.39 L145.34,184.31 L148.37,195.52 L151.39,193.35 L154.42,181.79 L157.45,176.69 L160.48,177.16 L163.51,170.08 L166.53,166.00 L169.56,162.38 L172.59,164.73 L175.62,158.98 L178.65,156.58 L181.67,160.45 L184.70,158.06 L187.73,153.26 L190.76,151.78 L193.78,160.07 L196.81,160.34 L199.84,158.80 L202.87,158.89 L205.90,157.43 L208.92,155.11 L211.95,154.94 L214.98,149.69 L218.01,147.91 L221.04,144.72 L224.06,144.41 L227.09,141.43 L230.12,142.29 L233.15,144.22 L236.18,145.92 L239.20,155.08 L242.23,155.06 L245.26,153.98 L248.29,154.28 L251.31,153.42 L254.34,149.23 L257.37,146.65 L260.40,144.12 L263.43,144.18 L266.45,149.31 L269.48,145.66 L272.51,144.67 L275.54,144.26 L278.57,142.29 L281.59,143.31 L284.62,142.95 L287.65,141.52 L290.68,136.23 L293.71,135.09 L296.73,131.66 L299.76,129.40 L302.79,128.93 L305.82,130.45 L308.84,125.63 L311.87,128.08 L314.90,124.94 L317.93,120.77 L320.96,118.23 L323.98,115.78 L327.01,119.50 L330.04,114.52 L333.07,114.51 L336.10,113.55 L339.12,111.83 L342.15,109.60 L345.18,111.61 L348.21,108.47 L351.24,111.36 L354.26,111.51 L357.29,109.83 L360.32,109.72 L363.35,109.43 L366.37,107.53 L369.40,109.76 L372.43,109.56 L375.46,109.21 L378.49,111.30 L381.51,109.69 L384.54,116.73 L387.57,116.85 L390.60,116.83 L393.63,116.82 L396.65,118.86 L399.68,120.99 L402.71,121.37 L405.74,117.16 L408.76,117.30 L411.79,116.13 L414.82,114.67 L417.85,112.32 L420.88,113.01 L423.90,113.11 L426.93,115.37 L429.96,110.01 L432.99,108.76 L436.02,107.07 L439.04,104.95 L442.07,104.88 L445.10,103.96 L448.13,102.58 L451.16,101.62 L454.18,99.90 L457.21,99.18 L460.24,97.51 L463.27,95.00 L466.29,92.30 L469.32,91.98 L472.35,87.13 L475.38,92.10 L478.41,92.11 L481.43,92.06 L484.46,91.51 L487.49,91.42 L490.52,91.04 L493.55,89.55 L496.57,89.06 L499.60,92.11 L502.63,91.05 L505.66,95.05 L508.69,90.87 L511.71,87.91 L514.74,86.08 L517.77,83.61 L520.80,89.28 L523.82,83.86 L526.85,82.86 L529.88,83.23 L532.91,82.32 L535.94,81.58 L538.96,79.61 L541.99,76.98 L545.02,78.03 L548.05,86.16 L551.08,77.57 L554.10,66.78 L557.13,62.56 L560.16,61.39 L563.19,57.26 L566.22,53.77 L569.24,57.81 L572.27,59.45 L575.30,52.64 L578.33,50.60 L581.35,51.49 L584.38,48.28 L587.41,44.39 L590.44,39.18 L593.47,38.74 L596.49,39.38 L599.52,36.52 L602.55,34.34 L605.58,39.48 L608.61,34.67 L611.63,35.99 L614.66,30.81 L617.69,34.71 L620.72,35.32 L623.75,34.05 L626.77,38.49 L629.80,37.65 L632.83,43.99 L635.86,35.93 L638.88,38.74 L641.91,44.89 L644.94,37.46 L647.97,32.06 L651.00,36.49 L654.02,33.00 L657.05,35.62 L660.08,36.95 L663.11,37.28 L666.14,40.20 L669.16,34.12 L672.19,31.43 L675.22,33.98 L678.25,38.02 L681.27,39.28 L684.30,36.41 L687.33,31.36 L690.36,32.11 L693.39,28.27 L696.41,24.88 L699.44,28.43 L702.47,25.87 L705.50,26.70 L708.53,24.03 L711.55,21.16 L714.58,19.46 L717.61,21.94 L720.64,16.89 L723.67,24.21 L726.69,25.47 L729.72,25.02 L732.75,25.86 L735.78,26.08 L738.80,22.94 L741.83,20.55 L744.86,19.55 L747.89,17.51 L750.92,16.24 L753.94,16.00 L756.97,14.66 L760.00,14.48" class="cline"/></svg><div class="chart-y"><span></span><span></span></div><div class="chart-x"><span>2005</span><span>2010</span><span>2015</span><span>2020</span><span>2025</span></div><div class="chart-cap"><span>$100 at the start, peak $589 · log scale</span><span>$589 after 21 years</span></div></div>
+<h3>How far below a previous high, and for how long</h3>
+<div class="chart"><svg viewBox="0 0 760 170" role="img" aria-label="Underwater chart at month-end: deepest month-end decline -34.6 percent below a prior high" preserveAspectRatio="none"><defs><linearGradient id="uw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="us0"/><stop offset="1" class="us1"/></linearGradient></defs><line x1="0" y1="56.7" x2="760" y2="56.7" class="cg"/><line x1="0" y1="113.3" x2="760" y2="113.3" class="cg"/><line x1="0" y1="0" x2="760" y2="0" class="czero"/><path d="M0.00,0.00 L3.04,3.60 L6.08,5.89 L9.12,2.18 L12.16,3.64 L15.20,0.00 L18.24,3.16 L21.28,0.00 L24.32,20.57 L27.36,3.17 L30.40,1.53 L33.44,0.00 L36.48,2.24 L39.52,0.00 L42.56,0.00 L45.60,14.94 L48.64,16.92 L51.68,16.96 L54.72,10.51 L57.76,2.15 L60.80,0.00 L63.84,0.00 L66.88,0.00 L69.92,0.00 L72.96,4.40 L76.00,2.20 L79.04,0.00 L82.08,0.00 L85.12,6.19 L88.16,16.77 L91.20,10.85 L94.24,0.00 L97.28,0.00 L100.32,6.86 L103.36,3.10 L106.40,20.92 L109.44,23.22 L112.48,18.77 L115.52,16.00 L118.56,16.57 L121.60,41.35 L124.64,58.59 L127.68,59.44 L130.72,70.81 L133.76,117.22 L136.80,91.58 L139.84,82.42 L142.88,115.02 L145.92,151.79 L148.96,145.02 L152.00,106.11 L155.04,87.38 L158.08,89.15 L161.12,61.48 L164.16,44.52 L167.20,28.90 L170.24,39.12 L173.28,13.59 L176.32,2.48 L179.36,20.26 L182.40,9.36 L185.44,0.00 L188.48,0.00 L191.52,37.46 L194.56,38.61 L197.60,31.92 L200.64,32.33 L203.68,25.89 L206.72,15.46 L209.76,14.71 L212.80,0.00 L215.84,0.00 L218.88,0.00 L221.92,0.00 L224.96,0.00 L228.00,4.01 L231.04,12.98 L234.08,20.68 L237.12,59.93 L240.16,59.82 L243.20,55.43 L246.24,56.66 L249.28,53.09 L252.32,35.30 L255.36,23.95 L258.40,12.52 L261.44,12.79 L264.48,35.66 L267.52,19.52 L270.56,15.01 L273.60,13.14 L276.64,4.02 L279.68,8.79 L282.72,7.10 L285.76,0.40 L288.80,0.00 L291.84,0.00 L294.88,0.00 L297.92,0.00 L300.96,0.00 L304.00,7.12 L307.04,0.00 L310.08,11.42 L313.12,0.00 L316.16,0.00 L319.20,0.00 L322.24,0.00 L325.28,17.23 L328.32,0.00 L331.36,0.00 L334.40,0.00 L337.44,0.00 L340.48,0.00 L343.52,9.37 L346.56,0.00 L349.60,13.44 L352.64,14.12 L355.68,6.37 L358.72,5.86 L361.76,4.48 L364.80,0.00 L367.84,10.39 L370.88,9.48 L373.92,7.88 L376.96,17.47 L380.00,10.07 L383.04,41.37 L386.08,41.86 L389.12,41.79 L392.16,41.73 L395.20,50.35 L398.24,59.17 L401.28,60.70 L404.32,43.21 L407.36,43.77 L410.40,38.78 L413.44,32.45 L416.48,22.03 L419.52,25.11 L422.56,25.60 L425.60,35.48 L428.64,11.58 L431.68,5.76 L434.72,0.00 L437.76,0.00 L440.80,0.00 L443.84,0.00 L446.88,0.00 L449.92,0.00 L452.96,0.00 L456.00,0.00 L459.04,0.00 L462.08,0.00 L465.12,0.00 L468.16,0.00 L471.20,0.00 L474.24,22.84 L477.28,22.91 L480.32,22.68 L483.36,20.22 L486.40,19.80 L489.44,18.08 L492.48,11.29 L495.52,9.03 L498.56,22.91 L501.60,18.12 L504.64,35.85 L507.68,17.33 L510.72,3.70 L513.76,0.00 L516.80,0.00 L519.84,25.94 L522.88,1.15 L525.92,0.00 L528.96,1.76 L532.00,0.00 L535.04,0.00 L538.08,0.00 L541.12,0.00 L544.16,4.95 L547.20,41.26 L550.24,2.77 L553.28,0.00 L556.32,0.00 L559.36,0.00 L562.40,0.00 L565.44,0.00 L568.48,18.70 L571.52,26.01 L574.56,0.00 L577.60,0.00 L580.64,4.21 L583.68,0.00 L586.72,0.00 L589.76,0.00 L592.80,0.00 L595.84,2.99 L598.88,0.00 L601.92,0.00 L604.96,23.61 L608.00,1.57 L611.04,7.72 L614.08,0.00 L617.12,18.04 L620.16,20.77 L623.20,15.03 L626.24,34.80 L629.28,31.14 L632.32,58.00 L635.36,23.52 L638.40,35.88 L641.44,61.68 L644.48,30.29 L647.52,5.86 L650.56,26.00 L653.60,10.19 L656.64,22.13 L659.68,28.04 L662.72,29.52 L665.76,42.16 L668.80,15.36 L671.84,2.93 L674.88,14.70 L677.92,32.73 L680.96,38.21 L684.00,25.64 L687.04,2.60 L690.08,6.11 L693.12,0.00 L696.16,0.00 L699.20,16.44 L702.24,4.68 L705.28,8.50 L708.32,0.00 L711.36,0.00 L714.40,0.00 L717.44,11.59 L720.48,0.00 L723.52,33.22 L726.56,38.69 L729.60,36.75 L732.64,40.34 L735.68,41.29 L738.72,27.64 L741.76,16.94 L744.80,12.39 L747.84,2.90 L750.88,0.00 L753.92,0.00 L756.96,0.00 L760.00,0.00 L760.00,0 L0,0 Z" fill="url(#uw)"/><path d="M0.00,0.00 L3.04,3.60 L6.08,5.89 L9.12,2.18 L12.16,3.64 L15.20,0.00 L18.24,3.16 L21.28,0.00 L24.32,20.57 L27.36,3.17 L30.40,1.53 L33.44,0.00 L36.48,2.24 L39.52,0.00 L42.56,0.00 L45.60,14.94 L48.64,16.92 L51.68,16.96 L54.72,10.51 L57.76,2.15 L60.80,0.00 L63.84,0.00 L66.88,0.00 L69.92,0.00 L72.96,4.40 L76.00,2.20 L79.04,0.00 L82.08,0.00 L85.12,6.19 L88.16,16.77 L91.20,10.85 L94.24,0.00 L97.28,0.00 L100.32,6.86 L103.36,3.10 L106.40,20.92 L109.44,23.22 L112.48,18.77 L115.52,16.00 L118.56,16.57 L121.60,41.35 L124.64,58.59 L127.68,59.44 L130.72,70.81 L133.76,117.22 L136.80,91.58 L139.84,82.42 L142.88,115.02 L145.92,151.79 L148.96,145.02 L152.00,106.11 L155.04,87.38 L158.08,89.15 L161.12,61.48 L164.16,44.52 L167.20,28.90 L170.24,39.12 L173.28,13.59 L176.32,2.48 L179.36,20.26 L182.40,9.36 L185.44,0.00 L188.48,0.00 L191.52,37.46 L194.56,38.61 L197.60,31.92 L200.64,32.33 L203.68,25.89 L206.72,15.46 L209.76,14.71 L212.80,0.00 L215.84,0.00 L218.88,0.00 L221.92,0.00 L224.96,0.00 L228.00,4.01 L231.04,12.98 L234.08,20.68 L237.12,59.93 L240.16,59.82 L243.20,55.43 L246.24,56.66 L249.28,53.09 L252.32,35.30 L255.36,23.95 L258.40,12.52 L261.44,12.79 L264.48,35.66 L267.52,19.52 L270.56,15.01 L273.60,13.14 L276.64,4.02 L279.68,8.79 L282.72,7.10 L285.76,0.40 L288.80,0.00 L291.84,0.00 L294.88,0.00 L297.92,0.00 L300.96,0.00 L304.00,7.12 L307.04,0.00 L310.08,11.42 L313.12,0.00 L316.16,0.00 L319.20,0.00 L322.24,0.00 L325.28,17.23 L328.32,0.00 L331.36,0.00 L334.40,0.00 L337.44,0.00 L340.48,0.00 L343.52,9.37 L346.56,0.00 L349.60,13.44 L352.64,14.12 L355.68,6.37 L358.72,5.86 L361.76,4.48 L364.80,0.00 L367.84,10.39 L370.88,9.48 L373.92,7.88 L376.96,17.47 L380.00,10.07 L383.04,41.37 L386.08,41.86 L389.12,41.79 L392.16,41.73 L395.20,50.35 L398.24,59.17 L401.28,60.70 L404.32,43.21 L407.36,43.77 L410.40,38.78 L413.44,32.45 L416.48,22.03 L419.52,25.11 L422.56,25.60 L425.60,35.48 L428.64,11.58 L431.68,5.76 L434.72,0.00 L437.76,0.00 L440.80,0.00 L443.84,0.00 L446.88,0.00 L449.92,0.00 L452.96,0.00 L456.00,0.00 L459.04,0.00 L462.08,0.00 L465.12,0.00 L468.16,0.00 L471.20,0.00 L474.24,22.84 L477.28,22.91 L480.32,22.68 L483.36,20.22 L486.40,19.80 L489.44,18.08 L492.48,11.29 L495.52,9.03 L498.56,22.91 L501.60,18.12 L504.64,35.85 L507.68,17.33 L510.72,3.70 L513.76,0.00 L516.80,0.00 L519.84,25.94 L522.88,1.15 L525.92,0.00 L528.96,1.76 L532.00,0.00 L535.04,0.00 L538.08,0.00 L541.12,0.00 L544.16,4.95 L547.20,41.26 L550.24,2.77 L553.28,0.00 L556.32,0.00 L559.36,0.00 L562.40,0.00 L565.44,0.00 L568.48,18.70 L571.52,26.01 L574.56,0.00 L577.60,0.00 L580.64,4.21 L583.68,0.00 L586.72,0.00 L589.76,0.00 L592.80,0.00 L595.84,2.99 L598.88,0.00 L601.92,0.00 L604.96,23.61 L608.00,1.57 L611.04,7.72 L614.08,0.00 L617.12,18.04 L620.16,20.77 L623.20,15.03 L626.24,34.80 L629.28,31.14 L632.32,58.00 L635.36,23.52 L638.40,35.88 L641.44,61.68 L644.48,30.29 L647.52,5.86 L650.56,26.00 L653.60,10.19 L656.64,22.13 L659.68,28.04 L662.72,29.52 L665.76,42.16 L668.80,15.36 L671.84,2.93 L674.88,14.70 L677.92,32.73 L680.96,38.21 L684.00,25.64 L687.04,2.60 L690.08,6.11 L693.12,0.00 L696.16,0.00 L699.20,16.44 L702.24,4.68 L705.28,8.50 L708.32,0.00 L711.36,0.00 L714.40,0.00 L717.44,11.59 L720.48,0.00 L723.52,33.22 L726.56,38.69 L729.60,36.75 L732.64,40.34 L735.68,41.29 L738.72,27.64 L741.76,16.94 L744.80,12.39 L747.84,2.90 L750.88,0.00 L753.92,0.00 L756.96,0.00 L760.00,0.00" class="uline"/><circle cx="145.9" cy="151.8" r="3.5" class="cdot"/></svg><div class="chart-y"><span>0%</span><span>-34.6%</span></div><div class="chart-x"><span>2005</span><span>2010</span><span>2015</span><span>2020</span><span>2025</span></div><div class="chart-cap"><span>Below a previous high, at month-end</span><span>deepest month-end -34.6% (daily max drawdown above is deeper)</span></div></div>
+<div class="note"><strong>Read these two figures together.</strong> The chart above is built from
+251 monthly returns; the <strong>-38.30%</strong> figure is computed from
+5,246 <em>daily</em> returns between 2005-02-24 and 2025-12-30.
+Monthly data smooths over declines that begin and end inside one month, so the curve bottoms out
+shallower than the true measured low. The daily figure is the honest one, and it is the one we
+publish. Annualized volatility over the full series is 14.15%.</div>
+<h2>Benchmark</h2><p><a href="/benchmarks/usmv">iShares MSCI USA Min Vol Factor ETF</a> (USMV). Alpha, beta, tracking error, information ratio and capture ratios on this page are all measured against it and would change against a different one.</p>
+<div class="note"><strong>Intended for financial professionals. Not a recommendation.</strong> This page is
+research data. Nothing here is investment advice or a recommendation to buy or sell. Past performance is
+not indicative of future results. Suitability depends on an individual client's circumstances. Before exporting any figure
+into a client-facing document, confirm the period, the as-of date and the fee basis — at that point
+it becomes <a href="/when-a-vendors-numbers-become-your-advertisement">your communication</a>.
+See <a href="/disclosures">disclosures</a>.</div>
+<div class="rel"><div><h2>More from THOR</h2><a href="/strategies/thor-sdq-rotation-index-thir">Thor SDQ Rotation Index (THIR)</a><a href="/strategies/thor-blend-growth-underlying">THOR Blend Growth Underlying</a><a href="/strategies/thor-international">Thor International</a><a href="/strategies/thor-dollar-alt">Thor Dollar ALT</a><a href="/strategies/thor-defined-outcome-july">THOR Defined Outcome - July</a><a href="/strategies/thor-blend-moderate-underlying">THOR Blend Moderate Underlying</a></div></div>
+<div class="close">Use riskDNA free: <a href="https://www.riskdna.ai/sign-up">Start free</a> &middot; <a href="/demo">Book a demo</a>. Back to <a href="/strategies">all strategies</a>.</div></article></div></main><footer class="ftr"><div class="wrap"><a class="brandlink" href="/"><svg class="mark" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><circle cx="16" cy="16" r="14.5" stroke="#C9A96E" stroke-width="1.5" fill="none"/><circle cx="16" cy="16" r="11" stroke="#C9A96E" stroke-width="0.5" fill="none" opacity="0.3"/><line x1="10" y1="10" x2="22" y2="22" stroke="#00D4AA" stroke-width="2.5" stroke-linecap="round"/><line x1="22" y1="10" x2="10" y2="22" stroke="#00D4AA" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="16" r="2.5" fill="#C9A96E"/></svg>risk<span class="d">DNA</span></a><div class="cols"><div><div class="fh">Platform</div><a href="/platform">Every screen</a><a href="/crm">CRM</a><a href="/risk-assessment">Risk assessment</a><a href="/blender">Blender</a><a href="/stress-testing">Stress testing</a><a href="/income-planning">Planning</a><a href="/command-center">Command Center</a><a href="/financial-dna">Financial DNA</a><a href="/marketplace">Practice M&amp;A (2027)</a><a href="/strategies">Strategy data</a><a href="/benchmarks">Benchmarks</a><a href="/pricing">Pricing</a><a href="https://www.riskdna.ai/sign-up">Start free</a><a href="/demo">Book a demo</a></div><div><div class="fh">Compare</div><a href="/compare">All comparisons</a><a href="/nitrogen-alternative">Nitrogen alternative</a><a href="/compare/nitrogen">vs Nitrogen</a><a href="/compare/stratifi">vs StratiFi</a><a href="/what-risk-software-costs">What risk software costs</a></div><div><div class="fh">Learn</div><a href="/insights">Insights</a><a href="/glossary">Glossary</a><a href="/methodology">Methodology</a><a href="/advisor-firms">RIA firm data</a></div><div><div class="fh">Company</div><a href="/about">About</a><a href="/how-we-make-money">How we make money</a><a href="/for-asset-managers">For asset managers</a><a href="/what-riskdna-is-not">What riskDNA is not</a></div><div><div class="fh">Legal</div><a href="/disclosures">Disclosures</a><a href="https://www.riskdna.ai/privacy">Privacy policy</a><a href="https://www.riskdna.ai/terms">Terms</a><a href="/website-privacy">Website privacy notice</a><a href="/website-terms">Website terms</a></div></div><div class="legal">riskDNA provides research and analytics tools for investment professionals. Nothing on this site is investment advice, a recommendation, or an offer to buy or sell any security. Performance figures describe results for the periods stated, as supplied by managers or computed from supplied series that may include model history before a strategy's launch; none are indicative of future results. See the <a href="/methodology">methodology</a> and <a href="/disclosures">disclosures</a>. Read <a href="/how-we-make-money">how we make money</a> before relying on any comparison.<br><br>© 2026 riskDNA LLC, a Delaware limited liability company. <a href="tel:+1-720-530-8584" style="display:inline">(720) 530-8584</a> — a person answers.</div></div></footer></body></html>
